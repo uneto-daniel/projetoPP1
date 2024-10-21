@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logout</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Para centralizar verticalmente */
+        background-color: #f4f4f4; /* Cor de fundo */
+      }
+
+      .button {
+        display: inline-block; /* Para que o botão se comporte como um bloco, mas em linha */
+        background-color: #ff0000; /* Cor de fundo do botão */
+        color: white; /* Cor do texto */
+        padding: 10px 20px; /* Espaçamento interno do botão */
+        border-radius: 5px; /* Bordas arredondadas */
+        text-align: center; /* Centraliza o texto */
+        text-decoration: none; /* Remove o sublinhado do link */
+        transition: background-color 0.3s; /* Efeito de transição ao passar o mouse */
+        cursor: pointer; /* Muda o cursor para indicar que é clicável */
+        margin-top: 20px; /* Espaçamento superior */
+      }
+
+      .button:hover {
+        background-color: #ffd700; /* Cor de fundo ao passar o mouse */
+      }
+
+      h1 {
+        color: #333; /* Cor do texto */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Você foi desconectado</h1>
+    <p>
+      Obrigado por comprar conosco. Clique no botão abaixo para retornar à
+      página inicial.
+    </p>
+    <div class="button">
+      <a href="login.html">Voltar à Página de login</a>
+    </div>
+  </body>
+</html>

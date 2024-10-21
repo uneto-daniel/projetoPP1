@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Império K7</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .navbar {
+        background-color: #333;
+        color: white;
+        padding: 15px 0;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .navbar a {
+        color: white;
+        margin: 0 20px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+
+      h2,
+      h3 {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .products-container {
+        display: flex;
+        flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
+        justify-content: center; /* Centraliza os itens */
+        margin: 20px 0; /* Margem superior e inferior */
+      }
+
+      .product {
+        display: inline-block;
+        width: calc(33.333% - 30px);
+        margin: 15px;
+        padding: 15px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: left;
+      }
+
+      .product img {
+        max-width: 100%;
+        border-radius: 8px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+        width: 100%;
+      }
+
+      /* Responsividade */
+      @media (max-width: 768px) {
+        .product {
+          width: calc(50% - 30px); /* Dois produtos por linha */
+        }
+      }
+
+      @media (max-width: 480px) {
+        .product {
+          width: 100%; /* Um produto por linha */
+        }
+
+        .navbar a {
+          margin: 0 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>
+        <a href="principal.html"
+          ><img src="Logo-Imperiok7.png" alt="Descrição da imagem" width="100"
+        /></a>
+      </h1>
+      <a href="produtos.html">Produtos</a>
+      <a href="carrinho.html">Carrinho</a>
+      <a href="perfil.html">Meu Perfil</a>
+      <a href="logout.html">Sair</a>
+    </div>
+
+    <h2>Bem-vindo, [Nome do Usuário]!</h2>
+    <h3>Produtos em Destaque</h3>
+
+    <div class="products-container">
+      <div class="product">
+        <a href="tenisKDEL.html"><img src="EL50LATGFlateral.png" alt="TÊNIS KADESH COURO LÁTEGO" /></a>
+        
+        <a href="tenisKDEL.html"><h4>TÊNIS KADESH COURO LÁTEGO</h4></a>
+        <p>
+          Tênis Amarrar Kadesh Safe Tech , marrom, solado em poliuretano (PU) na
+          cor grafite. Calçado com o conforto e a proteção necessária para
+          enfrentar o dia-a-dia em diversos ambientes de trabalho, ótima opção
+          para eletricistas devido as biqueiras em PVC e Composite. Atende as
+          normas da ABNT NBR ISO.
+        </p>
+        <p>Preço: R$249,86</p>
+        <table>
+          <td><button>Adicionar ao Carrinho</button></td>
+          <td>
+            <button>
+              <a href="tenisKDEL.html">Ver Produto</a>
+            </button>
+          </td>
+        </table>
+      </div>
+
+      <div class="product">
+        <a href="tenisFEMTr.html"><img src="Tênis Feminino Torricella.jpg" alt="Tênis Feminino Torricella"/></a>
+
+        <a href="tenisFEMTr.html"><h4>Tênis Feminino | Torricella</h4></a>
+        <p>
+          Tênis Feminino | Cód.: 13000-04A Material: Napa Bege; Palmilha: 4 mm
+          de Espessura na cor Bege; Forro: Cacharrel, material espumado para
+          maior conforto, na cor Bege; Salto / Solado: 3 cm de Altura, PVC
+          Flexível, antiderrapante, na cor branco. Calçados Tênis
+        </p>
+        <p>Preço: R$ R$179,98</p>
+        <table>
+          <td><button>Adicionar ao Carrinho</button></td>
+          <td>
+            <button>
+              <a href="tenisFEMTr.html">Ver Produto</a>
+            </button>
+          </td>
+        </table>
+      </div>
+
+      <div class="product">
+        <a href="sapatoScarpTr.html"><img src="Sapato Scarpin.jpg" alt="Sapato Scarpin" /></a>
+
+        <a href="sapatoScarpTr.html"><h4>Sapato Scarpin | Torricella</h4></a>
+        <p>
+          Material: Croco e Napa Preto; Palmilha: Confort com 8 mm de Espessura,
+          Espuma em EVA, Revestida com Napa Preto e Taloneira Napa Bege; Forro:
+          Cacharrel, material espumado para maior conforto, na cor bege claro;
+          Salto: 8,5 cm de Altura encapado em Croco Preto; Solado de PVC
+          antiderrapante na cor Preto. Calçados Sapato Scarpin
+        </p>
+        <p>Preço: R$139,77</p>
+        <table>
+          <td><button>Adicionar ao Carrinho</button></td>
+          <td>
+            <button>
+              <a href="sapatoScarpTr.html">Ver Produto</a>
+            </button>
+          </td>
+        </table>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Império K7. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>

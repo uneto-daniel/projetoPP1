@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novo Usuario</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      fieldset {
+        border: 1px solid #ccc;
+        padding: 20px;
+        max-width: 500px;
+        margin: auto;
+      }
+
+      input[type="text"],
+      input[type="date"],
+      input[type="tel"],
+      input[type="email"],
+      input[type="password"],
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 10px 0; /* Espaço entre os campos */
+        box-sizing: border-box; /* Inclui padding e bordas nas dimensões totais */
+      }
+
+      input[type="reset"] {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        cursor: pointer;
+      }
+
+      input[type="image"] {
+        display: block; /* Para que fique em uma linha separada */
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <form action="login.html">
+        <input
+          type="image"
+          src="imgseta-removebg-preview.png"
+          alt="Voltar"
+          width="30"
+          height="30"
+        />
+
+        <h2>Novo Usuario</h2>
+
+        <fieldset>
+          <b>Dados Pessoais:</b><br /><br />
+
+          Nome:
+          <input type="text" name="aluno" id="aluno" /><br />
+
+          Nascimento (dd/mm/aaaa):
+          <input type="date" name="nascimento" id="nascimento" /><br />
+          <table>
+            <td>
+              Telefone: DDD<input
+                type="tel"
+                name="ddd"
+                id="ddd"
+                maxlength="2"
+                minlength="2"
+              />
+            </td>
+            <td>
+              Tel:
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                maxlength="9"
+                minlength="8"
+              /><br />
+            </td>
+          </table>
+          E-mail:
+          <input type="email" name="email" id="email" /><br />
+
+          Senha:
+          <input
+            type="password"
+            name="senha"
+            maxlength="10"
+            minlength="8"
+          /><br />
+          Confirmação de senha:
+          <input
+            type="password"
+            name="confirmacao_senha"
+            maxlength="10"
+            minlength="8"
+          /><br />
+
+          Observações:
+          <textarea
+            name="observacoes"
+            id="observacoes"
+            cols="30"
+            rows="5"
+          ></textarea
+          ><br />
+
+          <input type="reset" value="Limpar" />
+        </fieldset>
+      </form>
+    </fieldset>
+  </body>
+</html>

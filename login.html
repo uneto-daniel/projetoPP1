@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Império K7</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+     <style>
+
+.button {
+            display: inline-block; /* Para que o botão se comporte como um bloco, mas em linha */
+            background-color: #007BFF; /* Cor de fundo do botão */
+            color: white; /* Cor do texto */
+            padding: 10px 20px; /* Espaçamento interno do botão */
+            border-radius: 5px; /* Bordas arredondadas */
+            text-align: center; /* Centraliza o texto */
+            text-decoration: none; /* Remove o sublinhado do link */
+            transition: background-color 0.3s; /* Efeito de transição ao passar o mouse */
+            cursor: pointer; /* Muda o cursor para indicar que é clicável */
+        }
+
+        .button a {
+            color: white; /* Cor do texto dentro do link */
+        }
+
+        .button:hover {
+            background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+        }
+    </style>
+     </style>   
+    
+</head>
+<body>
+    <div class="container">
+        <div>
+            <img src="Logo-Imperiok7.png" alt="Descrição da imagem" width="100">
+        </div>
+
+        <h1>Tela de Login</h1>
+        
+        <form action="/login" method="POST">
+            <label for="usuario">Usuário:</label>
+            <input type="text" id="usuario" name="usuario" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <div class="button">
+                <a href="principal.html">LOGIN</a>
+            </div>
+            <br>
+            <a href="novo.html">Novo Cadastro</a>
+
+        </form>
+
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho - Império K7</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        h2, h3 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .cart-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-item {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .cart-item img {
+            max-width: 100px;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
+
+        .cart-item h4 {
+            margin: 0;
+        }
+
+        .total {
+            text-align: right;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+
+        .checkout-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .checkout-buttons button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .checkout-buttons button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>
+            <a href="principal.html">
+                <img src="Logo-Imperiok7.png" alt="Descrição da imagem" width="100" />
+            </a>
+        </h1>
+        <a href="produtos.html">Produtos</a>
+        <a href="carrinho.html">Carrinho</a>
+        <a href="perfil.html">Meu Perfil</a>
+        <a href="logout.html">Sair</a>
+    </div>
+
+    <div class="cart-container">
+        <h2>Meu Carrinho</h2>
+        
+        <div class="cart-item">
+            <img src="EL50LATGFlateral.png" alt="TÊNIS KADESH COURO LÁTEGO" />
+            <div>
+                <h4>TÊNIS KADESH COURO LÁTEGO</h4>
+                <p>Preço: R$ 249,86</p>
+                <p>Quantidade: 1</p>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <img src="Tênis Feminino Torricella.jpg" alt="Tênis Feminino Torricella" />
+            <div>
+                <h4>Tênis Feminino | Torricella</h4>
+                <p>Preço: R$ 179,98</p>
+                <p>Quantidade: 1</p>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <img src="Sapato Scarpin.jpg" alt="Sapato Scarpin | Torricella" />
+            <div>
+                <h4>Sapato Scarpin | Torricella</h4>
+                <p>Preço: R$ 139,77</p>
+                <p>Quantidade: 1</p>
+            </div>
+        </div>
+
+        <div class="total">
+            <strong>Total: R$ 569,61</strong>
+        </div>
+
+        <div class="checkout-buttons">
+            <button>Continuar Comprando</button>
+            <button>Finalizar Compra</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Império K7. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
